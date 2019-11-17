@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Appear, Deck, Fit, Heading, List, ListItem, Slide, Text } from 'spectacle';
+import { Appear, Deck, Fit, Heading, Image, List, ListItem, Slide, Text } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
 // for theme//
@@ -26,7 +26,7 @@ export default class Presentation extends Component {
 
         {/* What are Dapps */}
         <Slide>
-          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>What are DApps</Heading>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>What are DApps ?</Heading>
           <Text textColor="secondary" textSize="36px">
             Dapps are applications that run on a blockchain network. Blockchains are known for their "decentralized" nature. That's where the 'D' comes from.
             A DApp could be written for any platform. So, in the most basic terms, it's like using a blockchain network a database instead of a traditional database.
@@ -36,7 +36,7 @@ export default class Presentation extends Component {
 
         {/* Most popular use cases */}
         <Slide>
-          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Where are DApps used ???</Heading>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Where are DApps used ?</Heading>
           <List>
             <Fit>
               <Appear>
@@ -57,12 +57,39 @@ export default class Presentation extends Component {
 
         {/* Why DApps */}
         <Slide>
-          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Why DApps???</Heading>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Why DApps?</Heading>
           <Text textColor="secondary" textSize="36px">
             The main reason for going with a blockchain rather than a traditional database would be security.
             The applications where you don't want your data to be tampered with.
           </Text>
         </Slide>
+
+        {/* How do we talk to a blockchain */}
+        <Slide>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>So, how do we talk to a Blockchain network ???</Heading>
+        </Slide>
+
+        {/* Where does Web3.js comes to play? */}
+        <Slide>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Web3.JS</Heading>
+          <Text textColor="secondary" textSize="36px">
+            Here Web3.js comes to the play. Web3.js is javascript library which provides you with the capability to talk
+            to a Ethereum based blockchain network. You can use Node, React, Angular, Vue, Svelete, or any javascript library/framework.
+          </Text>
+        </Slide>
+
+        {/* Web3.js explanation diagram 1*/}
+        <Slide>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>How Web3.js helps?</Heading>
+          <Image src="https://www.blockchainexpert.uk/blog/Uploads/BlogImage/what-is-web3js-blockchain-decentralized-web-1.jpg" width={620}/>
+        </Slide>
+
+        {/* Web3.js explanation diagram 2*/}
+        <Slide>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>How Web3.js works?</Heading>
+          <Image src="https://www.dappuniversity.com/web3-js-diagram.png"/>
+        </Slide>
+
       </Deck>
     );
   }
