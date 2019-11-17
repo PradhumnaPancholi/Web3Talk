@@ -54,6 +54,15 @@ export default class Presentation extends Component {
             </Fit>
           </List>
         </Slide>
+
+        {/* Why DApps */}
+        <Slide>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Why DApps???</Heading>
+          <Text textColor="secondary" textSize="36px">
+            The main reason for going with a blockchain rather than a traditional database would be security.
+            The applications where you don't want your data to be tampered with.
+          </Text>
+        </Slide>
       </Deck>
     );
   }
