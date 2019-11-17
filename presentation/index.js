@@ -14,6 +14,11 @@ const theme = createTheme(
     secondary: 'Helvetica'
   }
 );
+
+const images = {
+  node: require('../assets/img/node.png')
+};
+
 export default class Presentation extends Component {
   render() {
     return (
@@ -88,6 +93,12 @@ export default class Presentation extends Component {
         <Slide>
           <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>How Web3.js works?</Heading>
           <Image src="https://www.dappuniversity.com/web3-js-diagram.png"/>
+        </Slide>
+
+        {/* Web3.js example with node */}
+        <Slide>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Web3.js with Node</Heading>
+          <Image src={images.node} width={650} />
         </Slide>
 
       </Deck>
