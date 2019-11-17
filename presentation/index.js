@@ -16,7 +16,8 @@ const theme = createTheme(
 );
 
 const images = {
-  node: require('../assets/img/node.png')
+  node: require('../assets/img/node.png'),
+  react: require('../assets/img/react.png')
 };
 
 export default class Presentation extends Component {
@@ -99,6 +100,12 @@ export default class Presentation extends Component {
         <Slide>
           <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Web3.js with Node</Heading>
           <Image src={images.node} width={650} />
+        </Slide>
+
+        {/* Web3.js example with react */}
+        <Slide>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Web3.js with React</Heading>
+          <Image src={images.react} width={650} />
         </Slide>
 
       </Deck>
