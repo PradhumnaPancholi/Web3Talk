@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Deck, Heading, Slide, Text } from 'spectacle';
+import { Appear, Deck, Fit, Heading, List, ListItem, Slide, Text } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
 // for theme//
@@ -27,11 +27,32 @@ export default class Presentation extends Component {
         {/* What are Dapps */}
         <Slide>
           <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>What are DApps</Heading>
-          <Text textColor="secondary">
+          <Text textColor="secondary" textSize="36px">
             Dapps are applications that run on a blockchain network. Blockchains are known for their "decentralized" nature. That's where the 'D' comes from.
             A DApp could be written for any platform. So, in the most basic terms, it's like using a blockchain network a database instead of a traditional database.
-            After cryptocurrencies, this is most pouplar use case of blockchain.
+            After cryptocurrencies, this is most pouplar use case of a blockchain.
           </Text>
+        </Slide>
+
+        {/* Most popular use cases */}
+        <Slide>
+          <Heading margin="0 0 50px 0" size={5} textColor="secondary" bold>Where are DApps used ???</Heading>
+          <List>
+            <Fit>
+              <Appear>
+                <ListItem textSize="32px">Banking & Money Transfer</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem textSize="32px">Digital Identity Management ( Eg:- Medical Records ) </ListItem>
+              </Appear>
+              <Appear>
+                <ListItem textSize="32px">Documentation (Eg:- Real Estate, Wills)</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem textSize="32px">Gaming (Especially poker)</ListItem>
+              </Appear>
+            </Fit>
+          </List>
         </Slide>
       </Deck>
     );
